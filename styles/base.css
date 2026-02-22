@@ -1,0 +1,33 @@
+body {
+  font-family: Roboto, serif;
+  background-color: var(--main-color);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.html-card__image,
+.styles-card__image,
+.adaptive-card__image {
+  min-width: 262px;
+  max-width: 266px;
+  margin: var(--margin-center);
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

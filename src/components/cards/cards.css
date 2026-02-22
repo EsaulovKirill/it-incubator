@@ -1,0 +1,17 @@
+.card {
+  padding: var(--cards-padding-mobile);
+  display: flex;
+  flex-direction: column;
+  gap: var(--cards-inner-gap);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+@media (min-width: 768px) {
+  .card {
+    gap: var(--cards-inner-gap-media);
+  }
+
+  .adaptive-card__image {
+    max-width: 290px;
+  }
+}

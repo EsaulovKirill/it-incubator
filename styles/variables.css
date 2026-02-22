@@ -1,0 +1,17 @@
+:root {
+  --main-padding: 20px 15px;
+  --cards-padding-mobile: 30px 20px;
+  --cards-padding-media: 46px 20px;
+  --cards-inner-gap: 24px;
+  --cards-inner-gap-media: 36px;
+  --footer-padding-flex: 30px 30px;
+
+  --card-container-gap: 18px;
+  --margin-center: 0 auto;
+  --border-radius: 5px;
+
+  --main-color: #fff;
+  --text-color: #2f2e41;
+  --accent-color: #6c63ff;
+  --border-color: #e6e6e6;
+}

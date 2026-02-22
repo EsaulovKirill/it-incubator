@@ -1,0 +1,56 @@
+.footer {
+  background-color: var(--accent-color);
+  padding: 30px 30px;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.footer__link {
+  position: relative;
+}
+
+.footer__link::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.footer__link--home::before {
+  background-image: url(../../pictures/img/home-icon.svg);
+}
+
+.footer__link--courses::before {
+  background-image: url(../../pictures/img/computer-icon.svg);
+}
+
+.footer__link--sandbox::before {
+  background-image: url(../../pictures/img/sandbox-icon.svg);
+}
+
+.footer__link--contacts::before {
+  background-image: url(../../pictures/img/map-pointer-icon.svg);
+}
+
+@media (min-width: 450px) {
+  .footer {
+    justify-items: stretch;
+    padding-left: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--footer-padding-flex);
+  }
+}
